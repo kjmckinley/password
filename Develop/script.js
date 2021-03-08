@@ -1,7 +1,5 @@
 
-// Assignment Code
-
-var generateBtn = document.querySelector("#generate");
+// PASSWORD-GENERATOR
 
 // An array of upper case letters
 var uppercaseLettArray = [
@@ -21,9 +19,18 @@ var specialCharArray = [
 	'!','#','$','%','&','(',')','*','+','-','.','/',':',';','<','=','>','?','@',
 ];
 
-function generatePassword() {
+// Variables that will hold the values of the user input
+var passUpper;
+var passLower;
+var numChar;
+var passNum;
+var passSpecChar;
 
-};
+var generateBtn = document.querySelector("#generate");
+
+// function generatePassword() {
+
+// };
 
 // Write password to the #password input
 function writePassword() {
@@ -35,4 +42,4 @@ function writePassword() {
 };
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword());
