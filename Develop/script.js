@@ -57,6 +57,11 @@ function generatePassword() {
     passSpecChar = window.confirm("Does This Password Contain Special Characters?");
     passUpper = window.confirm("Does This Password Contain Upper Case Characters");
     passLower = window.confirm("Does This Password Contain Lower Case Characters");
+
+    console.log("Choice Value Numbers: " + passNum);
+    console.log("Choice Value Special Characters: " + passSpecChar);
+    console.log("Choice Value Upper Case: " + passUpper);
+    console.log("Choice Value Lower Case: " + passLower);
   };
 
   // Now organize the true and false values of the user input for the password criteria with an if statement
