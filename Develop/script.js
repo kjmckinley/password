@@ -1,6 +1,8 @@
 
 // PASSWORD-GENERATOR
 
+// DON'T FORGET TO OPEN UP THE CONSOLE IN THE BROWSER TO SEE THE MAGIC!
+
 // An array of upper case letters
 var uppercaseLettArray = [
 	'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
@@ -112,12 +114,14 @@ function generatePassword() {
   // Variable that hold an initially empty array that will hold the users new random password.
   var passwordContainer = [];
 
+  console.log("CHARACTERS IN NEW RANDOM PASSWORD:");
+
   // Randomly select characters based on the user criteria and put them together
   for (var i = 0; i < numChar; i++) {
     var randNum = passUserChoice[Math.floor(Math.random() * passUserChoice.length)];
     passwordContainer.push(randNum);
 
-    console.log("New Character: " + randNum);
+    console.log("New Character #" + (i +1) + ": " + randNum);
   }
   var pswd = passwordContainer.join("");
 
