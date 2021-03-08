@@ -2,6 +2,12 @@
 
 This project is meant to generate a random password based on user input or criteria.
 
+## Links
+
+```
+GitHub Repo: 
+Deployed Link:
+```
 
 ## User Story
 
@@ -11,7 +17,7 @@ I WANT to randomly generate a password that meets certain criteria
 SO THAT I can create a strong password that provides greater security
 ```
 
-## Acceptance Criteria
+## Criteria
 
 ```
 GIVEN I need a new, secure password

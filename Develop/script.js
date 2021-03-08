@@ -116,6 +116,8 @@ function generatePassword() {
   for (var i = 0; i < numChar; i++) {
     var randNum = passUserChoice[Math.floor(Math.random() * passUserChoice.length)];
     passwordContainer.push(randNum);
+
+    console.log("New Character: " + randNum);
   }
   var pswd = passwordContainer.join("");
 
@@ -123,15 +125,3 @@ function generatePassword() {
 
   return pswd;
 };
-
-// // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-
-//   passwordText.value = password;
-
-// };
-
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword());
