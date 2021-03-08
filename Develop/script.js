@@ -108,17 +108,29 @@ function generatePassword() {
     passUserChoice = uppercaseLettArray;
   };
 
-  
+  // Variable that hold an initially empty array that will hold the users new random password.
+  var passwordContainer = [];
+
+  // Randomly select characters based on the user criteria and put them together
+  for (var i = 0; i < numChar; i++) {
+    var randNum = passUserChoice[Math.floor(Math.random() * passUserChoice.length)];
+    passwordContainer.push(randNum);
+  }
+  var pswd = passwordContainer.join("");
+
+  console.log("User Password:" + pswd);
+
+  return pswd;
 };
 
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// // Write password to the #password input
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+//   passwordText.value = password;
 
-};
+// };
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword());
+// // Add event listener to generate button
+// generateBtn.addEventListener("click", writePassword());
