@@ -2,6 +2,14 @@
 
 This project is meant to generate a random password based on user input or criteria.
 
+The user will enter a numeric value between 8 and 128 in the prompt that occurse after the user has clicked the 'Generate Password Button'.
+
+The user will answer a series of 4 'yes or no' questions to determine the criteria of the new password.
+
+The Program will assemble an array with random characters concatcted, that are matching the user's criteria.
+
+The Program will display the new random password to the user.
+
 ## Links
 
 ```
