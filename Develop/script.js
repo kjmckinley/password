@@ -28,6 +28,7 @@ var passSpecChar;
 
 var passUserChoice;
 
+// Button that sets off the chain of events that will generate a new password.
 var generateBtn = document.querySelector("#generate");
 
 //click event that generates a password
