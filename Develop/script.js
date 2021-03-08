@@ -119,7 +119,7 @@ function generatePassword() {
   }
   var pswd = passwordContainer.join("");
 
-  console.log("User Password:" + pswd);
+  console.log("User Password:\n" + pswd);
 
   return pswd;
 };
