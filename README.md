@@ -13,8 +13,9 @@ The Program will display the new random password to the user.
 ## Links
 
 ```
-GitHub Repo: 
-Deployed Link:
+* [GitHub Repo HTTPS](https://github.com/kjmckinley/password.git)
+* [GitHub Repo SSH](git@github.com:kjmckinley/password.git)
+* [Deployed Link] (https://kjmckinley.github.io/password/)
 ```
 
 ## User Story
