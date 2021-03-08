@@ -65,6 +65,50 @@ function generatePassword() {
   else if (passNum && passSpecChar && passUpper && passLower) {
     passUserChoice = specialCharArray.concat(numbersArray, uppercaseLettArray, lowercaseLettArray);
   }
+  else if (passNum && passSpecChar && passUpper) {
+    passUserChoice = specialCharArray.concat(numbersArray, uppercaseLettArray);
+  }
+  else if (passNum && passSpecChar && passLower) {
+    passUserChoice = specialCharArray.concat(numbersArray, lowercaseLettArray);
+  }
+  else if (passSpecChar && passSpecChar && passLower) {
+    passUserChoice = specialCharArray.concat(uppercaseLettArray, lowercaseLettArray);
+  }
+  else if (passNum && passUpper && passLower) {
+    passUserChoice = numbersArray.concat(uppercaseLettArray, lowercaseLettArray);
+  }
+  else if (passSpecChar && passNum) {
+    passUserChoice = specialCharArray.concat(numbersArray);
+  }
+  else if  (passSpecChar && passLower) {
+    passUserChoice = specialCharArray.concat(lowercaseLettArray);
+  }
+  else if (passSpecChar && passUpper) {
+    passUserChoice = specialCharArray.concat(uppercaseLettArray);
+  }
+  else if (passLower && passNum) {
+    passUserChoice = lowercaseLettArray.concat(numbersArray);
+  }
+  else if (passLower && passUpper) {
+    passUserChoice = lowercaseLettArray.concat(uppercaseLettArray);
+  }
+  else if (passNum && passUpper) {
+    passUserChoice = numbersArray.concat(uppercaseLettArray);
+  }
+  else if (passSpecChar) {
+    passUserChoice = specialCharArray;
+  }
+  else if (passNum) {
+    passUserChoice = numbersArray;
+  }
+  else if (passLower) {
+    passUserChoice = lowercaseLettArray;
+  }
+  else if (passUpper) {
+    passUserChoice = uppercaseLettArray;
+  };
+
+  
 };
 
 // Write password to the #password input
